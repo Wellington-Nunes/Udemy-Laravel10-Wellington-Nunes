@@ -99,5 +99,4 @@ Acesse o projeto
 
 github: https://github.com/VictorPadovan1997/setup-docker-laravel-10
 
-
 docker compose exec -it sistema_gestao bash
