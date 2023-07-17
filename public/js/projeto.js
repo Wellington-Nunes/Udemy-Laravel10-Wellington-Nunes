@@ -10,7 +10,7 @@ function deleteRegistroPaginacao(rotaUrl, idRegistro) {
       beforeSend() {
         $.blockUI({
           message: "Carregando...",
-          timeout: 10000,
+          timeout: 2000,
         });
       },
     })
