@@ -15,6 +15,22 @@ class ProdutosSeeder extends Seeder
             'nome' => 'Cerveja',
             'valor' => "5.99"
             ]
-            );
+        );
+        
+        Produtos::create([
+            'nome' => 'Vinho',
+            'valor' => '19.99'
+        ]);
+
+        Produtos::create([
+            'nome' => 'Refrigerante',
+            'valor' => '3.50'
+        ]);
+
+        Produtos::create([
+            'nome' => 'Água',
+            'valor' => '1.99'
+        ]);
+
     }
 }
