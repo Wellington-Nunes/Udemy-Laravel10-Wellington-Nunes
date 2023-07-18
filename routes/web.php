@@ -1,12 +1,14 @@
 <?php
 
 use App\Http\Controllers\ClientesController;
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProdutosController;
 use App\Http\Controllers\VendaController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('index');
+// DashBoard
+Route::prefix('dashboard')->group(function () {
+    Route::get('/', [DashboardController::class, 'index'])->name('dashboard.index');
 });
 
 
