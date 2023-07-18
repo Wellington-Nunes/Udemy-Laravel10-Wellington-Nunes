@@ -38,7 +38,7 @@
                                     <td>{{ $cliente->bairro }}</td>
                                     <td>
                                         <a href="{{ route('atualizar.cliente', $cliente->id) }}" type="button"
-                                            class="btn btn-light btn-sm">Editar</a>
+                                            class="btn btn-secondary btn-sm">Editar</a>
 
                                         <meta name='csrf-token' content="{{ csrf_token() }}" />
                                         <a onClick="deleteRegistroPaginacao('{{ route('cliente.delete') }}', {{ $cliente->id }})"

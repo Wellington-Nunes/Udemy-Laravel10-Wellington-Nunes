@@ -17,7 +17,6 @@ class DashboardController extends Controller
         $totalDeVendaCadastrado = $this->buscaTotalVendaCadastrado();
         $totalDeUsuarioCadastrado = $this->buscaTotalUsuarioCadastrado();
 
-
         return view('pages.dashboard.dashboard', compact('totalDeProdutoCadastrado', 'totalDeClienteCadastrado', 'totalDeVendaCadastrado', 'totalDeUsuarioCadastrado'));
     }
 

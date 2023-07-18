@@ -31,7 +31,7 @@
                                 <td>{{ $usuario->email }}</td>
 
                                 <td>
-                                    <a href="{{ route('atualizar.usuario', $usuario->id) }}" class="btn btn-light btn-sm">
+                                    <a href="{{ route('atualizar.usuario', $usuario->id) }}" class="btn btn-secondary btn-sm">
                                         Editar
                                     </a>
 
