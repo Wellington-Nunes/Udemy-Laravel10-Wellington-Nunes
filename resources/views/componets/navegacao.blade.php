@@ -19,18 +19,28 @@
                      Produtos
                  </a>
              </li>
+
              <li class="nav-item">
                  <a class="nav-link" href="{{ route('clientes.index') }}">
                      <span data-feather="users" class="align-text-bottom"></span>
                      Clientes
                  </a>
              </li>
+
              <li class="nav-item">
-                 <a class="nav-link" href="{{ route('usuario.index') }}">
-                     <span data-feather="users" class="align-text-bottom"></span>
-                     Usuario
+                 <a class="nav-link" href="#">
+                     <span data-feather="tag" class="align-text-bottom"></span>
+                     Tags
                  </a>
              </li>
+
+             <li class="nav-item">
+                 <a class="nav-link" href="{{ route('usuario.index') }}">
+                     <span data-feather="user" class="align-text-bottom"></span>
+                     Usuário
+                 </a>
+             </li>
+
          </ul>
 
      </div>

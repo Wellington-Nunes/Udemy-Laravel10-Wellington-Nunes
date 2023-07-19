@@ -62,3 +62,15 @@ Route::prefix('usuario')->group(function () {
     Route::delete('/delete', [UsuarioController::class, 'delete'])->name('usuario.delete');
 });
 
+//Tags
+Route::prefix('tag')->group(function () {
+    Route::get('/', [TagController::class, 'index'])->name('tag.index');
+    
+    Route::get('/cadastrarTag', [TagController::class, 'cadastrarTag'])->name('cadastrar.tag');
+    Route::post('/cadastrarTag', [TagController::class, 'cadastrarTag'])->name('cadastrar.tag');
+    
+    Route::get('/atualizarTag/{id}', [TagController::class, 'atualizarTag'])->name('atualizar.tag');
+    Route::put('/atualizarTag/{id}', [TagController::class, 'atualizarTag'])->name('atualizar.tag');
+    
+    Route::delete('/delete', [TagController::class, 'delete'])->name('tag.delete');
+});

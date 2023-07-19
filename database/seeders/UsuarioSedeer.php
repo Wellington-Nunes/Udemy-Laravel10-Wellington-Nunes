@@ -13,8 +13,8 @@ class UsuarioSedeer extends Seeder
     {
         User::create(
             [
-                'name' => 'Guiulherme',
-                'email' => 'gui@mail.com',
+                'name' => 'Wellington Nunes',
+                'email' => 'well@gmail.com',
                 'password' => Hash::make('1234'),
             ]
         );

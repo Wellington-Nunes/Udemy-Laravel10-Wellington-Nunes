@@ -13,50 +13,50 @@ class ClientesSeeder extends Seeder
     {
         Cliente::create(
             [
-                'nome' => 'Lionel Messi',
-                'email' => 'messi@example.com',
-                'endereco' => 'Endereço 1',
-                'logradouro' => 'Logradouro 1',
+                'nome' => 'João da Silva',
+                'email' => 'joao.silva@example.com',
+                'endereco' => 'Rua da Paz, 123',
+                'logradouro' => 'Centro',
                 'cep' => '12345-678',
                 'bairro' => 'Bairro 1',
             ]
         );
         Cliente::create(
             [
-                'nome' => 'Cristiano Ronaldo',
-                'email' => 'ronaldo@example.com',
-                'endereco' => 'Endereço 2',
-                'logradouro' => 'Logradouro 2',
+                'nome' => 'Maria do Carmo',
+                'email' => 'maria.carmo@example.com',
+                'endereco' => 'Rua da Felicidade, 456',
+                'logradouro' => 'Bairro 2',
                 'cep' => '98765-432',
                 'bairro' => 'Bairro 2',
             ]
         );
         Cliente::create(
             [
-                'nome' => 'Neymar Jr.',
-                'email' => 'neymar@example.com',
-                'endereco' => 'Endereço 3',
-                'logradouro' => 'Logradouro 3',
+                'nome' => 'José da Costa',
+                'email' => 'jose.costa@example.com',
+                'endereco' => 'Rua da Esperança, 789',
+                'logradouro' => 'Bairro 3',
                 'cep' => '54321-098',
                 'bairro' => 'Bairro 3',
             ]
         );
         Cliente::create(
             [
-                'nome' => 'Kylian Mbappé',
-                'email' => 'mbappe@example.com',
-                'endereco' => 'Endereço 4',
-                'logradouro' => 'Logradouro 4',
+                'nome' => 'Ana Paula',
+                'email' => 'ana.paula@example.com',
+                'endereco' => 'Rua da Alegria, 1011',
+                'logradouro' => 'Bairro 4',
                 'cep' => '98765-432',
                 'bairro' => 'Bairro 4',
             ]
         );
         Cliente::create(
             [
-                'nome' => 'Robert Lewandowski',
-                'email' => 'lewandowski@example.com',
-                'endereco' => 'Endereço 5',
-                'logradouro' => 'Logradouro 5',
+                'nome' => 'Pedro Henrique',
+                'email' => 'pedro.henrique@example.com',
+                'endereco' => 'Rua da Paz, 1234',
+                'logradouro' => 'Bairro 5',
                 'cep' => '23456-789',
                 'bairro' => 'Bairro 5',
             ]
