@@ -28,7 +28,7 @@
              </li>
 
              <li class="nav-item">
-                 <a class="nav-link" href="#">
+                 <a class="nav-link" href="{{ route('tags.index') }}">
                      <span data-feather="tag" class="align-text-bottom"></span>
                      Tags
                  </a>

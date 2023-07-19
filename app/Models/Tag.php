@@ -12,4 +12,15 @@ class Tag extends Model
     protected $fillable = [
         'nome',
     ];
+
+    public function getTagsPesquisarIndex(string $search = '')
+    {
+        $tag = $this->where(function ($query) use ($search) {
+            if ($search) {
+                $query->where('nome', $search);
+                $query->orWhere('nome', 'LIKE', "%{$search}%");
+            }
+        })->get();
+        return $tag;
+    }
 }

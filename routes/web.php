@@ -66,7 +66,7 @@ Route::prefix('usuario')->group(function () {
 
 //Tags
 Route::prefix('tag')->group(function () {
-    Route::get('/', [TagController::class, 'index'])->name('tag.index');
+    Route::get('/', [TagController::class, 'index'])->name('tags.index');
     
     Route::get('/cadastrarTag', [TagController::class, 'cadastrarTag'])->name('cadastrar.tag');
     Route::post('/cadastrarTag', [TagController::class, 'cadastrarTag'])->name('cadastrar.tag');
