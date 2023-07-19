@@ -3,6 +3,8 @@
 use App\Http\Controllers\ClientesController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProdutosController;
+use App\Http\Controllers\TagController;
+use App\Http\Controllers\TagsProdutosController;
 use App\Http\Controllers\UsuarioController;
 use App\Http\Controllers\VendaController;
 use Illuminate\Support\Facades\Route;
@@ -74,3 +76,16 @@ Route::prefix('tag')->group(function () {
     
     Route::delete('/delete', [TagController::class, 'delete'])->name('tag.delete');
 });
+
+//Tags de produto
+Route::prefix('tags-produto')->group(function () {
+    Route::get('/', [TagsProdutosController::class, 'index'])->name('tags-produto.index');
+
+    Route::get('/cadastrarTagProduto', [TagsProdutosController::class, 'cadastrarTagProduto'])->name('cadastrar.tag-produto');
+    Route::post('/cadastrarTagProduto', [TagsProdutosController::class, 'cadastrarTagProduto'])->name('cadastrar.tag-produto');
+    
+    Route::get('/atualizarTagProduto/{id}', [TagsProdutosController::class, 'atualizarTagProduto'])->name('atualizar.tag-produto');
+    Route::put('/atualizarTagProduto/{id}', [TagsProdutosController::class, 'atualizarTagProduto'])->name('atualizar.tag-produto');
+    
+    Route::delete('/delete', [TagsProdutosController::class, 'delete'])->name('tags-produto.delete');
+}); 
